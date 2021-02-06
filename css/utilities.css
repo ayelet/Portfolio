@@ -1,0 +1,71 @@
+/* Ayelet Danieli - Utilities  */
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+
+    --clrBeeKeeper: #f6e58d;
+    --clrSpicedNectarine: #ffbe76;
+    --clrTurbo: #f9ca24;
+    --clrQuinceGelly: #f0932b;
+    
+    --clrCoastalBreeze: #dff9fb;
+    --clrMiddleBlue: #7ed6df;
+    --clrSoaringEagle: #95afc0;
+    --clrJuneBud: #badc58;
+    --clrHintOfIcePack: #c7ecee;
+    --clrGreenlandGreen: #22a6b3;
+
+    --clrPureApple: #6ab04c;
+    --clrHeliotrope: #e056fd;
+    --clrSteelPink: #be2edd;
+    --clrExodusFruit: #686de0;
+    --clrBlurple: #4834d4;
+
+    --clrPinkGlamore: #ff7979;
+    --clrCarminePink: #eb4d4b;
+    --clrDeepKoamaru: #30336b;
+    --clrDeepCove: #130f40;
+    --clrWizardGray:#535c68;
+
+    --fontJosefin: 'Josefin Slab', serif;
+    --fontPatrickHand: 'Patrick Hand', cursive;
+
+    --lightColor: var(--clrCoastalBreeze);
+    --mediumColor: var(--clrPinkGlamore);
+    --darkColor: var(--clrDeepCove);
+}
+
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--darkColor);
+    color: var(--lightColor);
+    line-height: 1.6rem;
+
+}
+
+h2, h3, h4 {
+    font-family: var(--fontJosefin);
+    text-transform: uppercase;
+    color: var(--darkColor);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--darkColor);
+}
+
+p {
+    font-family: var(--fontPatrickHand);
+}
