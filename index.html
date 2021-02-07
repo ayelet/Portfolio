@@ -8,17 +8,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
         integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+
     <title>Ayelet Danieli | Portfolio</title>
 </head>
 
 <body>
-    <header class="hero">
+    <header class="header">
         <navbar class="navbar-top">
             <div class="logo">
+                <h1>AD</h1>
             </div>
             <ul>
                 <li>
@@ -30,203 +36,211 @@
                 </li>
             </ul>
         </navbar>
-        <div class="content">
-            <h1>hello world</h1>
-            <h2>Ayelet Danieli</h2>
-            <a href="#about" class="btn--next"><i class="fas fa-chevron-down"></i></a>
-        </div>
-    </header>
-
 
     </header>
-
-    <section id="about" class="block block--about">
-        <main class="site-main">
-            <div class="main-img">
-                <img class="round-img" src="./images/Logo.png" alt="">
+    <div class="main">
+        <section id="hero" class="block block--hero">
+            <div class="content">
+                <h1 class="hello">
+                    <span class="letter">h</span>
+                    <span class="letter">e</span>
+                    <span class="letter">l</span>
+                    <span class="letter">l</span>
+                    <span class="letter">o</span>
+                </h1>
+                <h3>Ayelet Danieli</h3>
+                <h2 class="name">Fullstack Developer</h2>
             </div>
-            <div class="main-content">
-                <div class="hello,">
-                    <h1>Hello</h1>
+            <div class="next">
+                <a href="#about" class="btn--next"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <section id="about" class="block block--about">
+            <main class="site-main">
+                <div class="main-img">
+                    <img class="round-img" src="./images/Logo.png" alt="">
                 </div>
-                <div class="intro">
-                    <h4>a bit about me:</h4>
+                <div class="main-content">
+                    <div class="hello,">
+                        <h1>Hi</h1>
+                    </div>
+                    <div class="intro">
+                        <h4>a bit about me:</h4>
+                    </div>
+                    <div class="button-section">
+                        <button id="btnResume" class="round-btn"><a href="#">Resume</a></button>
+                        <button id="btnProjects" class="round-btn"><a href="#">Projects</a></button>
+                        <button id="btnSkills" class="round-btn"><a href="#">Skills</a></button>
+                    </div>
+                    <div class="description">
+                        <p class="description">I'm Ayelet. I live in Haifa and I am a software engineer. I love crafting all sorts of
+                            stuff
+                            but my real passion is sewing costumes and making theatre backdrops. I love learning
+                            something
+                            new everyday. I used to work with C++ and now I am doing a fullstack bootcamp. I am so
+                            excited.
+                        </p>
+                    </div>
                 </div>
-                <div class="button-section">
-                    <button id="btnResume" class="round-btn"><a href="#">Resume</a></button>
-                    <button id="btnProjects" class="round-btn"><a href="#">Projects</a></button>
-                    <button id="btnSkills" class="round-btn"><a href="#">Skills</a></button>
+                <a href="#experience" class="btn--next"><i class="fas fa-chevron-down"></i></a>
+
+        </section>
+
+        <!-- Experience  -->
+        <section id="experience" class="block block--experience">
+            <header id="main-header">
+                <div class="container">
+                    <h1><i class="fas fa-brain"></i>Experience</h1>
                 </div>
-                <div class="description">
-                    <p>Hi, I'm Ayelet. I live in Haifa and I am a software engineer. I love crafting all sorts of stuff
-                        but my real passion is sewing costumes and making theatre backdrops. I love learning something
-                        new everyday. I used to work with C++ and now I am doing a fullstack bootcamp. I am so excited.
-                    </p>
+            </header>
+
+            <section id="timeline" class="timeline timeline--experience">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <h3><i class="fas fa-chevron-right"></i> 2021 - now: Fullstack Bootcamp</h3>
+                            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, distinctio. Mollitia
+                                reprehenderit veritatis officia perferendis dicta obcaecati sapiente, rem quia?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <h3>
+                                <i class="fas fa-chevron-right"></i> 2011 - 2015: Medtronic
+                            </h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                libero provident!
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <h3><i class="fas fa-chevron-right"></i> 1999-2005: Mediguide</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                libero provident!
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <h3><i class="fas fa-chevron-right"></i> 1997-1998: Sunlight Ultrasound Technologies</h3>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
+                                eum assumenda architecto, perspiciatis itaque maiores ex rerum
+                                libero provident!
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+            <a href="#education" class="btn--next"><i class="fas fa-chevron-down"></i></a>
+
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="block block--education">
+            <header id="main-header">
+                <div class="container">
+                    <h1><i class="fas fa-brain"></i> Knowledge</h1>
+                    <!-- <h3><i class="fas fa-user"></i> Ayelet Danieli</h3> -->
+                </div>
+            </header>
+
+            <section id="timeline" class="timeline timeline--education">
+                <ul>
+                    <li>
+                        <div>
+                            <h3><i class="fas fa-graduation-cap"></i> 2021 - now: Fullstack Bootcamp</h3>
+                            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, distinctio. Mollitia
+                                reprehenderit veritatis officia perferendis dicta obcaecati sapiente, rem quia?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>
+                                <i class="fas fa-university"></i> Computer Sciences B.A
+                            </h3>
+                            <p class="description">
+                                Open University
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3><i class="fas fa-graduation-cap"></i> Veterinary Medicine</h3>
+                            <p class="description">
+                                Hebrew University of Jerusalem
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3><i class="fas fa-university"></i>Animal Sciences B.Sc.</h3>
+                            <p class="description">
+                                Hebrew University of Jerusalem
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="block block--contact">
+
+            <div class="grid">
+                <div class="cell--img">
+                    <img src="./images/pngkey.com-typewriter-png-407876.png" alt="typewriter">
+                </div>
+                <div class="cell--form">
+                    <h2>Contact me</h2>
+                    <form action="" class="callback-form">
+                        <div class="form-control">
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" placeholder="Enter name" />
+                        </div>
+                        <div class="form-control">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Enter email" />
+                        </div>
+                        <div class="form-control">
+                            <label for="phone"></label>
+                            <input type="text" name="phone" id="phone" placeholder="Enter phone" />
+                        </div>
+                        <input type="submit" value="Send" id="submit" class="btn" />
+                    </form>
                 </div>
             </div>
-    </section>
 
-    <!-- Experience  -->
-    <section id="experience" class="block block--experience">
-        <header id="main-header">
-            <div class="container">
-                <h1><i class="fas fa-brain"></i> Education & Skills</h1>
-                <h3><i class="fas fa-user"></i> Ayelet Danieli</h3>
-            </div>
-        </header>
+        </section>
 
-        <section id="timeline">
+        <!-- footer -->
+        <footer class="footer">
             <ul>
                 <li>
-                    <div>
-                        <h3><i class="fas fa-chevron-right"></i> 2021 - now: Fullstack Bootcamp</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, distinctio. Mollitia
-                            reprehenderit veritatis officia perferendis dicta obcaecati sapiente, rem quia?</p>
-                    </div>
+                    <a href="https://www.linkedin.com/in/ayeletdanieli/" target="new"><span
+                            class="fab fa-linkedin"></span>
+                        Resume</a>
                 </li>
                 <li>
-                    <div>
-                        <h3>
-                            <i class="fas fa-chevron-right"></i> 2011 - 2015: Medtronic
-                        </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-                            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-                            libero provident!
-                        </p>
-                    </div>
+                    <a href="https://www.facebook.com/AyeletDanieli" target="new"><span class="fab fa-facebook"></span>
+                        Social</a>
                 </li>
                 <li>
-                    <div>
-                        <h3><i class="fas fa-chevron-right"></i> 1999-2005: Mediguide</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-                            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-                            libero provident!
-                        </p>
-                    </div>
+                    <a href="https://www.pinterest.com/colargolet/_saved/" target="new"><span
+                            class="fab fa-pinterest"></span> My Gallery</a>
                 </li>
-                <li>
-                    <div>
-                        <h3><i class="fas fa-chevron-right"></i> 1997-1998: Sunlight Ultrasound Technologies</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut
-                            eum assumenda architecto, perspiciatis itaque maiores ex rerum
-                            libero provident!
-                        </p>
-                    </div>
-                </li>
-
             </ul>
-        </section>
-    </section>
 
-    <!-- Education -->
-    <section id="education" class="block block--education">
-        <header id="main-header">
-            <div class="container">
-                <h1><i class="fas fa-brain"></i> ExperSience</h1>
-                <h3><i class="fas fa-user"></i> Ayelet Danieli</h3>
-            </div>
-        </header>
-
-        <section id="timeline">
-            <ul>
-                <li>
-                    <div>
-                        <h3><i class="fas fa-graduation-cap"></i> 2021 - now: Fullstack Bootcamp</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, distinctio. Mollitia
-                            reprehenderit veritatis officia perferendis dicta obcaecati sapiente, rem quia?</p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>
-                            <i class="fas fa-university"></i> Computer Sciences B.A
-                        </h3>
-                        <p>
-                            Open University
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3><i class="fas fa-graduation-cap"></i> Veterinary Medicine</h3>
-                        <p>
-                            Hebrew University of Jerusalem
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3><i class="fas fa-university"></i>Animal Sciences B.Sc.</h3>
-                        <p>
-                            Hebrew University of Jerusalem
-                        </p>
-                    </div>
-                </li>
-
-            </ul>
-        </section>
-    </section>
-    <section id="contact" class="block block--contact">
-
-    <div class="grid">
-        <div class="cell--img">
-        </div>
-        <div class="cell--form">
-            <h2>Request Callback</h2>
-            <form action="" class="callback-form">
-              <div class="form-control">
-                <label for="name"></label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter name"
-                />
-              </div>
-              <div class="form-control">
-                <label for="email"></label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter email"
-                />
-              </div>
-              <div class="form-control">
-                <label for="phone"></label>
-                <input
-                  type="text"
-                  name="phone"
-                  id="phone"
-                  placeholder="Enter phone"
-                />
-              </div>
-              <input type="submit" value="Send" id="submit" class="btn" />
-            </form>
-        </div>
+        </footer>
     </div>
-
-    </section>
-    <footer class="footer">
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/ayeletdanieli/" target="new"><span
-                        class="fab fa-linkedin"></span> Resume</a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/AyeletDanieli" target="new"><span
-                        class="fab fa-facebook"></span> Social</a>
-            </li>
-            <li>
-                <a href="https://www.pinterest.com/colargolet/_saved/" target="new"><span
-                        class="fab fa-pinterest"></span> My Gallery</a>
-            </li>
-        </ul>
-
-    </footer>
 </body>
 
 </html>
